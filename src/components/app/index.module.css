@@ -1,0 +1,12 @@
+.window {
+  width: 1170px;
+  margin: 0 auto;
+  @apply flex;
+  @apply flex-col;
+  @apply shadow;
+}
+
+.content {
+  @apply w-full;
+  @apply flex;
+}

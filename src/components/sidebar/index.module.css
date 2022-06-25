@@ -1,0 +1,112 @@
+.sidebar {
+  padding-top: 20px;
+  display: flex;
+  flex: 1 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  @apply bg-gray-900;
+}
+
+.compose {
+  padding: 10px 15px;
+  transition: background-color 200ms ease-in-out;
+  color: white;
+  border-radius: 3px;
+  background-color: var(--blue);
+  font-size: 20px;
+  &:hover {
+    background-color: var(--blue);
+  }
+  &:active {
+    background-color: var(--blue);
+  }
+}
+
+.categories {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  li {
+    position: relative;
+  }
+}
+
+.icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0.6;
+  color: white;
+  font-size: 20px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.icon-is-active {
+  opacity: 1 !important;
+}
+
+.notification {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 3px solid var(--midnight);
+  border-radius: 50%;
+  background-color: var(--red);
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  margin: 20px 0;
+}
+
+.label-red {
+  composes: label;
+  composes: item-red from global;
+}
+
+.label-blue {
+  composes: label;
+  composes: item-blue from global;
+}
+
+.label-yellow {
+  composes: label;
+  composes: item-yellow from global;
+}
+
+.label-green {
+  composes: label;
+  composes: item-green from global;
+}
+
+.user-profile {
+  display: flex;
+  padding-bottom: 20px;
+
+  flex-flow: column wrap;
+  align-items: center;
+  i {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.6;
+    color: white;
+    font-size: 20px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
